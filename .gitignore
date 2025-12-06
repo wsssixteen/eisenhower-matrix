@@ -87,3 +87,4 @@ coverage/
 # Kubernetes / Docker overrides
 *.override.yaml
 *.override.yml
+data/
