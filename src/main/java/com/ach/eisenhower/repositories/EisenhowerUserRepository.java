@@ -3,13 +3,12 @@ package com.ach.eisenhower.repositories;
 import com.ach.eisenhower.entities.EisenhowerUserEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import javax.swing.text.html.Option;
-import java.time.LocalDate;
 import java.util.Date;
 import java.util.List;
 import java.util.Optional;
+import java.util.UUID;
 
-public interface EisenhowerUserRepository extends JpaRepository<EisenhowerUserEntity, Long> {
+public interface EisenhowerUserRepository extends JpaRepository<EisenhowerUserEntity, UUID> {
     Optional<EisenhowerUserEntity> findByEmail(String username);
 
     List<EisenhowerUserEntity> findByLastLoginDateBefore(Date date);

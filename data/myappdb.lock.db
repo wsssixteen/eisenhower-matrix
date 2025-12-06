@@ -1,0 +1,6 @@
+#FileLock
+#Sat Dec 06 15:28:02 MYT 2025
+server=192.168.0.8\:52789
+hostName=miyazaki.realtek
+method=file
+id=19af28f81ef03ce15f912deea26fc337101a76ccee5

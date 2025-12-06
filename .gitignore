@@ -1,18 +1,31 @@
+# OS / editor noise
 .DS_Store
+Thumbs.db
 
-# Compiled class file
-*.class
+# Env / secrets
+.env
+.env.*
+*.local
 
-# Log file
+# Logs / temp
 *.log
+logs/
+tmp/
+*.tmp
 
-# BlueJ files
+# Java / Maven
+*.class
 *.ctxt
-
-# Mobile Tools for Java (J2ME)
 .mtj.tmp/
+hs_err_pid*
+target/
+*/**/target/**
+*/**/site/**
+!**/src/main/**/target/
+!**/src/test/**/target/
+dependency-reduced-pom.xml
 
-# Package Files #
+# Package artifacts
 *.jar
 *.war
 *.nar
@@ -20,30 +33,28 @@
 *.zip
 *.tar.gz
 *.rar
+*.exe
 
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
-hs_err_pid*
+# Build outputs
+/out/
+/build/
+!**/src/main/**/build/
+!**/src/test/**/build/
 
-*/**/target/**
-*/**/site/**
-
-application-dev.properties
-
-HELP.md
-target/
+# Maven wrapper
 !.mvn/wrapper/maven-wrapper.jar
-!**/src/main/**/target/
-!**/src/test/**/target/
 
-application-dev.properties
+# Configs
+application-local.properties
+HELP.md
 
-### Node ###
+# Node
 node_modules/
 node/
 package-lock.json
 .npmrc
 
-### STS ###
+# STS
 .apt_generated
 .classpath
 .factorypath
@@ -52,21 +63,27 @@ package-lock.json
 .springBeans
 .sts4-cache
 
-### IntelliJ IDEA ###
+# IntelliJ IDEA
 .idea
 *.iws
 *.iml
 *.ipr
 
-### NetBeans ###
+# NetBeans
 /nbproject/private/
 /nbbuild/
 /dist/
 /nbdist/
 /.nb-gradle/
-build/
-!**/src/main/**/build/
-!**/src/test/**/build/
 
-### VS Code ###
+# VS Code
 .vscode/
+
+# Coverage / reports
+coverage/
+*.lcov
+*.jacoco.exec
+
+# Kubernetes / Docker overrides
+*.override.yaml
+*.override.yml
